@@ -12,8 +12,9 @@ public class Main {
         System.out.println("| 1 - Criar Animal                               |");
         System.out.println("| 2 - Mover Animal                               |");
         System.out.println("| 3 - Verificar se Animal está Vivo              |");
-        System.out.println("| 3 - Informar morte de um Animal                |");
-        System.out.println("| 4 - Mostrar Infos                              |");
+        System.out.println("| 4 - Informar morte de um Animal                |");
+        System.out.println("| 5 - Fazer um animal comer                      |");
+        System.out.println("| 6 - Mostrar Infos                              |");
         System.out.println("+------------------------------------------------+");
 
         return sc.nextInt();
@@ -146,6 +147,32 @@ public class Main {
                     }
                     else {
                         System.out.printf("Lamentamos a perda do(a) %s!\n\n", animals.get(posAnimalEscolhido).getNome());
+                        animals.get(posAnimalEscolhido).morreu();
+                    }
+                    break;
+                case 5:
+                    System.out.println("Qual animal deseja dar comida?");
+                    posAnimalEscolhido = painelAnimais(animals);
+
+                    if (posAnimalEscolhido == -1) {
+                        System.out.println("Esse animal não foi criado!\n");
+                    }
+                    else {
+                        System.out.printf("Quantos Kg o %s irá comer?\n", animals.get(posAnimalEscolhido).getNome());
+                        float kg = sc.nextFloat();
+
+                        System.out.printf("O animal %s comeu %.2fKg de %s!\n\n", animals.get(posAnimalEscolhido).getNome(), kg, animals.get(posAnimalEscolhido).getTipoDeAlimentacao() == "Herbívoro" ? "Planta" : "Carne");
+                    }
+                    break;
+                case 6:
+                    System.out.println("\nQual animal deseja mostrar as informações? ");
+                    posAnimalEscolhido = painelAnimais(animals);
+
+                    if (posAnimalEscolhido == -1) {
+                        System.out.println("Esse animal não foi criado!\n");
+                    }
+                    else {
+                        animals.get(posAnimalEscolhido).info();
                     }
                     break;
                 default:

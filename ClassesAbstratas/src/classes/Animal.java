@@ -60,8 +60,7 @@ abstract public class Animal implements SerVivo {
         System.out.printf("Sexo: %S\n", this.sexo);
         System.out.printf("Local: %S\n", this.localEncontrado);
         System.out.printf("Tipo de Alimento: %S\n", this.tipoDeAlimentacao);
-        System.out.printf("Vivo: %b\n", this.vivo ? "SIM" : "NÃO");
-        System.out.println(" ");
+        System.out.printf("Vivo: %s\n\n", this.vivo ? "SIM" : "NÃO");
     }
 
     public void morreu() {

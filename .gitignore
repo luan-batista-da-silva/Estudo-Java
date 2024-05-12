@@ -9,4 +9,6 @@
 .idea
 ./Estudo-Java.iml
 ./out
-*.class
+./*.class
+./ClassesAbstratas/src/*.class
+./ClassesAbstratas/src/classes/*.class
