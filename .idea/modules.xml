@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Arquivos/Arquivos.iml" filepath="$PROJECT_DIR$/Arquivos/Arquivos.iml" />
       <module fileurl="file://$PROJECT_DIR$/ArraysMethods/ArraysMethods.iml" filepath="$PROJECT_DIR$/ArraysMethods/ArraysMethods.iml" />
       <module fileurl="file://$PROJECT_DIR$/ClassesAbstratas/ClassesAbstratas.iml" filepath="$PROJECT_DIR$/ClassesAbstratas/ClassesAbstratas.iml" />
       <module fileurl="file://$PROJECT_DIR$/Estudo-Java.iml" filepath="$PROJECT_DIR$/Estudo-Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/Interface/Interface.iml" filepath="$PROJECT_DIR$/Interface/Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arquivos/Logo/Logo.iml" filepath="$PROJECT_DIR$/Arquivos/Logo/Logo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stacks/Stacks.iml" filepath="$PROJECT_DIR$/Stacks/Stacks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TryCatch-Throw/TryCatch.iml" filepath="$PROJECT_DIR$/TryCatch-Throw/TryCatch.iml" />
     </modules>
   </component>
 </project>
